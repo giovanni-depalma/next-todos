@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withTwin = require('./withTwin.js')
+const nextConfig = withTwin({
   experimental: {
     appDir: true,
   },
-}
+})
 
 module.exports = nextConfig
